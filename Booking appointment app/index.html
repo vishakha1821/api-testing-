@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking appointment app</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Booking appointment Application</h2>
+        <form role="form">
+            <div>
+              name  <input type="text" name="name" id="name" placeholder="full name" required>
+            </div><br>
+            <div>
+              Phone number  <input type="number" name="number" id="number" placeholder="phone number" required>
+            </div><br>
+            <div>
+              email  <input type="email" name="email" id="email" placeholder="email" required>
+            </div><br>
+            <div>
+                <button type="submit">Register</button>
+            </div>
+
+            
+
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="script.js">
+        axios.post("https://crudcrud.com/api/27d3b8fab97e4108baad6abeee04b026/data")
+        .then((response)=>{
+            console.log(response);
+        })
+        .catch((err)=>{
+            console.log(err);
+        })
+    </script>
+
+</body>
+</html>
